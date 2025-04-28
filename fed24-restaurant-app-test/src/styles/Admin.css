@@ -1,0 +1,200 @@
+/* Main Content */
+.admin-main {
+  width: 80%;
+  padding: 1rem;
+}
+
+.admin-content {
+  background-color: #E8ECEF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-content h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.admin-content p {
+  color: #666;
+}
+
+/* ปรับให้ใช้ความกว้างเต็มในหน้า AddMenu และ EditMenu */
+.admin-menu-list.full-width,
+.admin-menu-form.full-width {
+  width: 100%;
+  padding: 0;
+}
+
+/* Menu Group */
+.admin-content .menu-group {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.admin-content .menu-group h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #A9A9A9;
+  padding-bottom: 0.5rem;
+  color: #000 !important;
+}
+
+/* Menu List */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.menu-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-item-details span {
+  font-size: 1rem;
+}
+
+.menu-item .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu-item .actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-item .actions svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #666;
+}
+
+.menu-item .actions button:hover svg {
+  color: #333;
+}
+
+.menu-empty {
+  color: #666;
+  font-style: italic;
+}
+
+/* Menu Form */
+.menu-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.menu-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.menu-form input,
+.menu-form textarea,
+.menu-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.menu-form select {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-form select:focus {
+  outline: none;
+  border-color: #A9A9A9;
+}
+
+.menu-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.menu-form .ingredient-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.menu-form .ingredient-group input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.menu-form .ingredient-group button {
+  margin-left: 0.5rem;
+  background-color: #A9A9A9;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-form .ingredient-group button:hover {
+  background-color: #8B8B8B;
+}
+
+.menu-form .add-ingredient {
+  background-color: #A9A9A9;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.menu-form .add-ingredient:hover {
+  background-color: #8B8B8B;
+}
+
+.menu-form button[type="submit"] {
+  width: 100%;
+  background-color: #A9A9A9;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.menu-form button[type="submit"]:hover {
+  background-color: #8B8B8B;
+}
+
+.menu-form-error {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
